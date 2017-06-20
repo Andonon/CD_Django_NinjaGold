@@ -1,0 +1,104 @@
+/*******************************************************************/
+/* Created: Juen 11 2017 by Troy Center, troycenter1@gmail.com.      */
+/* Coding Dojo Flask Ninja Gold Assignment                         */
+/*******************************************************************/
+
+/***************************************************/
+/*               CSS reset settings                */
+/***************************************************/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+#wrapper {
+    height: 500px;
+    width: 800px;
+    padding: 50px;
+    background-image: linear-gradient(300deg, lightgrey, white);
+}
+footer {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/***************************************************/
+/*     MAIN CSS                                    */
+/***************************************************/
+#goldcounter {
+    border: 2px goove grey;
+    width: 200px;
+    text-align: left;
+    padding: 10px;
+    margin: 0 auto;
+}
+#work {
+    padding-left: 100px;
+}
+h1 { 
+    text-align: center;
+    
+}
+h3 { 
+    text-align: center;
+    padding-top: 20px;
+}
+h4 {
+    text-align: center;
+    font-size: .8em;
+}
+#farm {
+    display: Inline-block;
+    height: 150px;
+    width: 150px;
+    vertical-align: top;
+    border: 2px groove grey;
+
+}
+input {
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px grey;
+    position: relative;
+    height: 20px;
+    width: 90px;
+    top: 50px;
+    left: 30px;
+}
+#cave {
+    display: Inline-block;
+    height: 150px;
+    width: 150px;
+    vertical-align: top;
+    border: 2px groove grey;
+
+}
+#house { 
+    display: Inline-block;
+    height: 150px;
+    width: 150px;
+    vertical-align: top;
+    border: 2px groove grey;
+}
+#casino {
+    display: Inline-block;
+    height: 150px;
+    width: 150px;
+    vertical-align: top;
+    border: 2px groove grey;
+}
+#activities { 
+    display: Inline-block;
+    height: 200px;
+    width: 800px;
+    text-align: left;
+    overflow:auto;
+}
+textarea {
+    text-align: left;
+    position: relative;
+    left: 50px;
+
+}

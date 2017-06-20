@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Ninja Gold</title>
+        <meta description='Main Page for Ninja Gold App'
+        <meta charset='utf-8'/>
+        <link rel='stylesheet' type='text/css' href='{{ url_for('static', filename='ninjagold.css') }}' />
+    </head>
+    <body>
+        <div id='wrapper'>
+            <h1>Ninja Gold Game</h1>
+            <h3 id="goldcounter">Your Gold: {{ session['gold'] }}</h3>
+            <div id="work">
+                <div id="farm">
+                    <h3>Farm</h3>
+                    <h4>(earns 10-20 gold)</h4>
+                    <form action="/process_money" id="farmform" method="post">
+                        <input type="hidden" name="action" value="farm">
+                        <input id="farmbutton" name="submit" type="submit" value="Find Gold!">
+                    </form>
+                </div>               
+                <div id="cave">
+                    <h3>Cave</h3>
+                    <h4>(earns 5-10 gold)</h4>
+                    <form action="/process_money" id="caveform" method="post">
+                        <input type="hidden" name="action" value="cave">
+                        <input id="cavebutton" name="submit" type="submit" value="Find Gold!">
+                    </form>
+                </div>               
+                <div id="house">
+                    <h3>House</h3>
+                    <h4>(earns 2-5 gold)</h4>
+                    <form action="/process_money" id="houseform" method="post">
+                        <input type="hidden" name="action" value="house">
+                        <input id="housebutton" name="submit" type="submit" value="Find Gold!">
+                    </form>
+                
+                </div>               
+                <div id="casino">
+                    <h3>Casino</h3>
+                    <h4>(earns/takes 0-50 gold)</h4>
+                    <form action="/process_money" id="casinoform" method="post">
+                        <input type="hidden" name="action" value="casino">
+                        <input id="casinobutton" name="submit" type="submit" value="Find Gold!">
+                    </form>                    
+                </div>               
+            </div>               
+            <div id="activities">
+                <h3>Activities:</h3>
+                <ul>
+                    {% for each in range(0, session['activities']|length) %}
+                        <li>{{ session['activities'][each] }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <footer>
+                <p>by Troy Center, Coding Dojo, June 2017</p>
+            </footer>   
+        </div>
+    </body>
+</html>
